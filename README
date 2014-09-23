@@ -1,0 +1,29 @@
+Files:
+python Files:
+1.run.py
+2.actor_attr_extraction.py
+3.author_attr_extraction.py
+4.businessperson_attr_extraction.py
+5.league_attr_extraction.py
+6.person_attr_extraction.py
+7.sportsTeam_attr_extraction.py
+8.output.py
+9.questions.py
+
+Extra Files:
+We have two query files: one for questions, which include all test cases as well as some extra questions for more precise checking of our code against yours. The same applies to info box checking, there are 20 queries, the first queries are the test cases and the rest are some extra checking. our results are saved in files called test_infobox.result and test_question.result.
+
+README
+MAKEFILE
+
+****************************************************************************
+
+Usage:
+1. python run.py -key <Freebase API key> -q <query> -t <infobox | question>
+2. python run.py -key <Freebase API key> -f <file of queries> -t <infobox | question>
+
+where:
+* <Freebase API key > is the Google account key for Freebase.
+* -q <query> is the query. For infobox, it is a list of words in double quotes (e.x., “Bill Gates”). For question, it is a string that matches this patten “Who created [X]?”, where [X] is the target item. “W” and “w” is both accepted to our implementation, and “?” can be skipped. 
+* -f <file of queries> is a text file with one query per line.
+* -t <infobox | question> indicates the query type.
